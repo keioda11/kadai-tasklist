@@ -24,7 +24,7 @@ class TasksController < ApplicationController
 
 
   def task_params
-    params.require(:task_params).permit(:content)
+    params.require(:task).permit(:content)
   end
   
   def correct_user
