@@ -1,3 +1,4 @@
 (1..100).each do |number|
-  Task.create(status: 'test title ' + number.to_s, content: 'test content ' + number.to_s)
+  STDERR.puts number
+  Task.create!(status: 't_' + number.to_s, content: 'content' + number.to_s)
 end
